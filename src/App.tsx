@@ -74,6 +74,7 @@ import ArticleList from "./components/Articles/ArticleList";
 import OrderForm from "./OrederForm/OrderForm";
 import OrderFormRadioButton from "./components/OrderFormRadioButton/OrderFormRadioButton";
 import FormCheckBox from "./components/FormCheckBox/FormCheckBox";
+import FormSelectList from "./components/FormSelectList/FormSelectList";
 
 interface ArticlesHttpResponse {
   hits: Article[];
@@ -121,6 +122,7 @@ export default function App() {
       <OrderForm />
       <OrderFormRadioButton />
       <FormCheckBox />
+      <FormSelectList />
     </>
   );
 }
