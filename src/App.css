@@ -40,3 +40,10 @@
 .read-the-docs {
   color: #888;
 }
+ol {
+  list-style-position: inside;
+}
+li {
+  text-indent: 10px;
+  padding-left: 10px;
+}

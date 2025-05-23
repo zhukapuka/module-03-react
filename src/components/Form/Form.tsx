@@ -11,7 +11,7 @@ export default function Form() {
   // };
 
   const handleSubmit = (formData: FormData) => {
-    const username = formData.get("username") as string;
+    const username = formData.get("username") as string; //каже що там точно повертається строка
     console.log("Name:", username);
   };
   // return (
@@ -22,7 +22,7 @@ export default function Form() {
   // );
   return (
     <form action={handleSubmit}>
-      <input type="text" name="username" />
+      <input type="text" name="username" defaultValue="John Doe" />
       <button type="submit">Submit</button>
     </form>
   );
