@@ -72,6 +72,7 @@ import SearchForm from "./components/SearchForm/SearchForm";
 import type { Article } from "./types/article";
 import ArticleList from "./components/Articles/ArticleList";
 import OrderForm from "./OrederForm/OrderForm";
+import OrderFormRadioButton from "./components/OrderFormRadioButton/OrderFormRadioButton";
 
 interface ArticlesHttpResponse {
   hits: Article[];
@@ -117,6 +118,7 @@ export default function App() {
       {isLoading && <p>Loading data, please wait...</p>}
       {articles.length > 0 && <ArticleList items={articles} />}
       <OrderForm />
+      <OrderFormRadioButton />
     </>
   );
 }
